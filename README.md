@@ -1,5 +1,35 @@
 # Frog React Gallery
 
+## How to use this project
+
+1. Clone this repo
+```
+git clone git@github.com:ThomasDHolt/FrogReactGallery.git
+```
+2. Enter the client folder
+```
+cd FrogReactGallery
+
+cd client
+```
+3. Install NPM packages
+```
+npm i
+```
+
+## How to run this project
+
+1. Enter the client folder
+```
+cd FrogReactGallery
+
+cd client
+```
+2. Run the Dev script
+```
+npm run dev
+```
+
 ## What requirements did I achieve?
 
 - I implemented useState multiple times throughout my React components, observing multiple states such as the selected image url.
