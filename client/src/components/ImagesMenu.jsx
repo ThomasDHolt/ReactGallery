@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Thumbnail } from "./Thumbnail";
 
-export function ImagesMenu() {
+export function ImagesMenu({setMainImageData, setMainImageSelected}) {
     const [imagesData, setImagesData] = useState([]);
     const [imagesLoaded, setImagesLoaded] = useState(false);
 
@@ -17,8 +17,8 @@ export function ImagesMenu() {
 
     return (
         <div aria-live="polite">
-            <div className="flex flex-row">
-                {imagesLoaded ? imagesData.map((image) => (<Thumbnail imageData={image} />)) : <p>Loading images...</p>}
+            <div className="flex flex-row justify-center">
+                {imagesLoaded ? imagesData.map((image) => (<Thumbnail imageData={image} setMainImageData={setMainImageData} setMainImageSelected={setMainImageSelected} />)) : <p>Loading images...</p>}
             </div>
         </div>
     );
